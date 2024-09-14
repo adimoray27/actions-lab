@@ -21,7 +21,7 @@ jobs:
     - name: Deploy HTML file to Apache
       run: |
         sudo cp index.html /var/www/html/index.html
-        sudo systemctl restart apache2
+        sudo systemctl restart httpd
 
     - name: Test Apache server
       run: curl http://localhost
