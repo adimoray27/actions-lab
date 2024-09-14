@@ -13,10 +13,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Apache
+    - name: Install Httpd
       run: |
-        sudo apt-get update
-        sudo apt-get install -y apache2
+        sudo dnf update
+        sudo dnf install -y httpd
     
     - name: Deploy HTML file to Apache
       run: |
